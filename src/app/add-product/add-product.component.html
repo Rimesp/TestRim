@@ -1,0 +1,35 @@
+<div class="container">
+  <form [formGroup]="productform" class="my-form">
+    <table class="table">
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="id">Id</label>
+            <input type="text" id="id" class="form-control" formControlName="id" placeholder="Entrez l'Id">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="title">Titre</label>
+            <input type="text" id="title" class="form-control" formControlName="title" placeholder="Entrez le Titre">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label for="price">Prix</label>
+            <input type="text" id="price" class="form-control" formControlName="price" placeholder="Entrez le Prix">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit" class="btn btn-primary">Ajouter</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
